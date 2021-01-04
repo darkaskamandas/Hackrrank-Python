@@ -1,0 +1,13 @@
+N=int(raw_input())
+dict={}
+li=[]
+for i in range(N):
+    word=raw_input()
+    if word in dict:
+        dict[word]+=1
+    else:
+        dict[word]=1
+        li.append(word)
+print len(li)      
+for i in li:
+    print dict[i],
