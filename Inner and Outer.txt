@@ -1,0 +1,5 @@
+import numpy
+m=numpy.array(map(int,raw_input().split()))
+n=numpy.array(map(int,raw_input().split()))
+print numpy.inner(m,n)
+print numpy.outer(m,n)
