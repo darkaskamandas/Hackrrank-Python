@@ -1,0 +1,16 @@
+def readline():
+  return raw_input().strip().split(' ')
+
+n, m = map(int, readline())
+arr = map(int, readline())
+A = set(map(int, readline()))
+B = set(map(int, readline()))
+        
+happiness = 0
+for a in arr:
+  if a in A:
+    happiness += 1
+  if a in B:
+    happiness -= 1
+        
+print happiness

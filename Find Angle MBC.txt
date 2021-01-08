@@ -1,0 +1,6 @@
+import math
+ab = float(raw_input())
+bc = float(raw_input())
+tang = ab / bc
+rad = math.atan(tang)
+print '{}°'.format(int(round(math.degrees(rad))))

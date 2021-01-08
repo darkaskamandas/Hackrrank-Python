@@ -1,0 +1,9 @@
+import numpy
+a=int(raw_input())
+m=[]
+n=[]
+for i in range(a):
+    m.append(map(int,raw_input().split()))
+for i in range(a):
+    n.append(map(int,raw_input().split()))
+print numpy.dot(numpy.array(m),numpy.array(n))
