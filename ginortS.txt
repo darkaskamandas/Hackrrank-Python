@@ -1,0 +1,11 @@
+import string
+
+def myfun(a):
+    if a in string.ascii_lowercase: return a
+    if a in string.ascii_uppercase: return "z" + str(a)
+    elif int(a)%2 == 1: return "zz"+str(a)
+    else: return "zzz"+str(a)
+
+a = raw_input()
+print str(sorted(a, key = myfun)).translate(None, ', \'[]')
+'::2012-05-14 18:10:20.856000::'.translate(None, ' -.:')
